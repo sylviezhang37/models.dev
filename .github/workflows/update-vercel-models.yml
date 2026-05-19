@@ -57,7 +57,7 @@ jobs:
         uses: peter-evans/create-pull-request@v8
         with:
           token: ${{ secrets.UPSTREAM_GITHUB_TOKEN }}
-          branch-token: ${{ secrets.UPSTREAM_GITHUB_TOKEN }}
+          branch-token: ${{ github.token }}
           push-to-fork: ${{ github.repository }}
           maintainer-can-modify: false
           sign-commits: true
